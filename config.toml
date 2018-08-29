@@ -4,7 +4,7 @@ title = "Blog about Sitecore development"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/joostmeijles/blog\">Joost Meijles</a> 2018"
 disqusShortname = ""
-googleAnalytics = ""
+googleAnalytics = "UA-124806744-1"
 # Number of posts per page
 Paginate = 5
 enableRobotsTXT = true
