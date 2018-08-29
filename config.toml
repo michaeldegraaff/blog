@@ -1,0 +1,50 @@
+baseurl = "https://joostmeijles.github.io/blog"
+languageCode = "en"
+title = "Blog about Sitecore development"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/joostmeijles/blog\">Joost Meijles</a> 2018"
+disqusShortname = "shortname"
+googleAnalytics = ""
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
+publishDir = "docs" # https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "Sitecore development by Joost Meijles" # Title for home page
+poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+related = true # Includes related articles
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+twitter = "joostmeijles"
+github = "joostmeijles"
+email = "joost@meijl.es"
+linkedin = "joostmeijles"
+facebook = ""
+instagram = ""
+codepen = ""
+
+[params.matomoAnalytics]
+siteID = 1
+rootURL = ""
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
+
