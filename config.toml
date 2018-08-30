@@ -1,6 +1,6 @@
-baseurl = "https://www.sitecore.fyi"
+baseurl = "https://joostmeijles.github.io/blog"
 languageCode = "en"
-title = "Blogging about Sitecore FYI"
+title = "Blogging about Sitecore development"
 description = "My personal blog about Sitecore development"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/joostmeijles/blog\">Joost Meijles</a> 2018"

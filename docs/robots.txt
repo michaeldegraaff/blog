@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://www.sitecore.fyi/sitemap.xml
+Sitemap: https://joostmeijles.github.io/blog/sitemap.xml
