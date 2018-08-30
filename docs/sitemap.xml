@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://joostmeijles.github.io/blog/entity_composer_templates/</loc>
+    <loc>https://www.sitecore.fyi/entity_composer_templates/</loc>
     <lastmod>2018-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joostmeijles.github.io/blog/</loc>
+    <loc>https://www.sitecore.fyi/</loc>
     <lastmod>2018-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joostmeijles.github.io/blog/tags/</loc>
+    <loc>https://www.sitecore.fyi/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joostmeijles.github.io/blog/tags/xc9/</loc>
+    <loc>https://www.sitecore.fyi/tags/xc9/</loc>
     <lastmod>2018-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

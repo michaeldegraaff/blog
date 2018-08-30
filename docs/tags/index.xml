@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Blog about Sitecore development</title>
-    <link>https://joostmeijles.github.io/blog/tags/</link>
-    <description>Recent content in Tags on Blog about Sitecore development</description>
+    <title>Tags on FYI blogging about Sitecore</title>
+    <link>https://www.sitecore.fyi/tags/</link>
+    <description>Recent content in Tags on FYI blogging about Sitecore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/joostmeijles/blog&#34;&gt;Joost Meijles&lt;/a&gt; 2018</copyright>
     
-	<atom:link href="https://joostmeijles.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sitecore.fyi/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Xc9</title>
-      <link>https://joostmeijles.github.io/blog/tags/xc9/</link>
+      <link>https://www.sitecore.fyi/tags/xc9/</link>
       <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joostmeijles.github.io/blog/tags/xc9/</guid>
+      <guid>https://www.sitecore.fyi/tags/xc9/</guid>
       <description></description>
     </item>
     
