@@ -1,9 +1,3 @@
-+++
-title = "Programmatically adding Entity Composer templates"
-date = "2018-08-29"
-tags = ["XC9"]
-+++
-
 The XC9 Entity Composer functionality is introduced in update-2, and this [article](https://community.sitecore.net/technical_blogs/b/technical-marketing/posts/experience-commerce-entity-composer) describes the concept and explains how to add Entity Composer templates using the Business Tools.
 
 In this article we describe how to programmatically add Entity Composer templates.
@@ -14,7 +8,6 @@ Creating a template, adding it to a sellable item, and filling a property value 
 * Create an Entity Composer template
 * Add an item definition to the catalog
 * Link template to an item definition
-* Link sellable item to an item definition
 * Set a property value for a sellable item
 * Link the entity view to the Entity Composer template
 
@@ -98,23 +91,6 @@ template.SetComponent(
         Definitions = new List<string> { "MyDefinition" }
     }
 );
-```
-
-## Link a sellable item to item definition
-Finally we can link the template to the sellable item.
-```
-var catalogsComponent = sellableItem.GetComponent<CatalogsComponent>();
-
-catalogsComponent = new CatalogsComponent 
-{
-    ChildComponents =
-    {
-        new CatalogComponent
-        {
-            Name = catalogId
-        }
-    }
-};
 ```
 
 ## Set a property value for a sellable item
