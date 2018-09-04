@@ -21,7 +21,7 @@
       <description>The XC9 Entity Composer functionality is introduced in update-2, and this article describes the concept and explains how to add Entity Composer templates using the Business Tools.
 In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer.
 Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
- Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Link sellable item to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.</description>
+ Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.</description>
     </item>
     
   </channel>
