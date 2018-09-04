@@ -111,8 +111,7 @@ catalogsComponent = new CatalogsComponent
     {
         new CatalogComponent
         {
-            Name = catalogId,
-            ItemDefinition = "MyDefinition"
+            Name = catalogId
         }
     }
 };
@@ -170,8 +169,6 @@ sellableItem.Components.Add(composerTemplateViewsComponent);
 # Remarks
 The Entity Composer functionality is brand new, and while reverse engineering how to programmatically do it, we bumped against some (to be solved) unclearities and bugs:
 - Property values cannot be set for product variants. The `CatalogDataProvider` however generates templates for variants, and somehow some values get filled. This is a limitation of the current implementation in XC9 update-2.
-
-- Template are shown twice in the Business Tools. This only happens with programmatically assigning templates and filling values, the manual approach using the Business Tools does not have this. The resulting JSON in the database is however for both approaches the same. It's to be determined what is wrong.
 
 - The `CatalogDataProvider` throws an error when properties do not have `RawValue` set (in JSON). As a result you will not see any values in the Sitecore Content Editor. Workaround is either always filling a value, or patching `CatalogDataProvider.GetItemFields` with following code (see [this](https://sitecore.stackexchange.com/questions/13498/xc9-entity-composer-error-when-rawvalue-is-not-present/13499#13499) post):
     ```

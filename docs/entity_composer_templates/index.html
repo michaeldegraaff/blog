@@ -224,8 +224,7 @@ catalogsComponent = new CatalogsComponent
     {
         new CatalogComponent
         {
-            Name = catalogId,
-            ItemDefinition = &quot;MyDefinition&quot;
+            Name = catalogId
         }
     }
 };
@@ -288,8 +287,6 @@ sellableItem.Components.Add(composerTemplateViewsComponent);
 - Property values cannot be set for product variants. The <code>CatalogDataProvider</code> however generates templates for variants, and somehow some values get filled. This is a limitation of the current implementation in XC9 update-2.</p>
 
 <ul>
-<li><p>Template are shown twice in the Business Tools. This only happens with programmatically assigning templates and filling values, the manual approach using the Business Tools does not have this. The resulting JSON in the database is however for both approaches the same. It&rsquo;s to be determined what is wrong.</p></li>
-
 <li><p>The <code>CatalogDataProvider</code> throws an error when properties do not have <code>RawValue</code> set (in JSON). As a result you will not see any values in the Sitecore Content Editor. Workaround is either always filling a value, or patching <code>CatalogDataProvider.GetItemFields</code> with following code (see <a href="https://sitecore.stackexchange.com/questions/13498/xc9-entity-composer-error-when-rawvalue-is-not-present/13499#13499" target="_blank">this</a> post):</p>
 
 <pre><code>var val = property[(object)&quot;Value&quot;].Value&lt;string&gt;() ?? String.Empty;
@@ -319,7 +316,7 @@ fieldList1.Add(templateField.ID, val);
 </section>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
