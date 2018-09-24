@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.48" />
+	<meta name="generator" content="Hugo 0.45" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -11,7 +11,7 @@
 <meta property='og:description' content=''>
 <meta property='og:url' content='https://joostmeijles.github.io/blog/'>
 <meta property='og:site_name' content='Blog about Sitecore development'>
-<meta property='og:type' content='website'><meta property='og:image' content='https://joostmeijles.github.io/blog/android-chrome-512x512.png'><meta property='article:section' content=''><meta property='og:updated_time' content='2018-08-29T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@joostmeijles'><meta name='twitter:creator' content='@joostmeijles'>
+<meta property='og:type' content='website'><meta property='og:image' content='https://joostmeijles.github.io/blog/android-chrome-512x512.png'><meta property='article:section' content=''><meta property='og:updated_time' content='2018-09-24T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@joostmeijles'><meta name='twitter:creator' content='@joostmeijles'>
 <link rel="stylesheet" href="/blog/css/style.css"/><link rel='stylesheet' href='https://joostmeijles.github.io/blog/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
@@ -105,6 +105,32 @@
 
         
       </div>
+      <h2 class="subtitle is-6">September 24, 2018</h2>
+      <h1 class="title"><a href="https://joostmeijles.github.io/blog/optimize_catalog_import/">Speed up the Catalog Import process</a></h1>
+      <div class="content">
+        The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process. After applying these optimizations, importing a sellable item costs about 13 msec.
+Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usage The ICreateRelationshipPipeline is expensive; do not use it. Instead create the relations yourself. At the same time limit the number of writes (ie.
+        
+        <a class="button is-link" href="https://joostmeijles.github.io/blog/optimize_catalog_import/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/blog/tags/xc9">#XC9</a>
+
+
+
+        
+      </div>
       <h2 class="subtitle is-6">August 29, 2018</h2>
       <h1 class="title"><a href="https://joostmeijles.github.io/blog/entity_composer_templates/">Programmatically adding Entity Composer templates</a></h1>
       <div class="content">
@@ -152,7 +178,7 @@ Creating a template, adding it to a sellable item, and filling a property value 
 </section>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
