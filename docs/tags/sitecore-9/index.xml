@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog about Sitecore development</title>
-    <link>https://joostmeijles.github.io/blog/</link>
-    <description>Recent content on Blog about Sitecore development</description>
+    <title>Sitecore 9 on Blog about Sitecore development</title>
+    <link>https://joostmeijles.github.io/blog/tags/sitecore-9/</link>
+    <description>Recent content in Sitecore 9 on Blog about Sitecore development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/joostmeijles/blog&#34;&gt;Joost Meijles&lt;/a&gt; 2018</copyright>
     <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joostmeijles.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joostmeijles.github.io/blog/tags/sitecore-9/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,28 +21,6 @@
       <description>Sitecore 9 can be slow to start, which is especially annoying during development. Below are some configuration tweaks to speed it up.
 Scheduling Put some agents on low rotation:
 &amp;lt;scheduling&amp;gt; &amp;lt;!-- Update this agent so it doesn&#39;t run every 10 seconds. Appears to be related to email contact management. --&amp;gt; &amp;lt;agent type=&amp;quot;Sitecore.ListManagement.Operations.UpdateListOperationsAgent, Sitecore.ListManagement&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:30:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;agent type=&amp;quot;Sitecore.ContentSearch.SolrProvider.Agents.IndexingStateSwitcher, Sitecore.ContentSearch.SolrProvider&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;08:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;!-- Never automatically build core or master index --&amp;gt; &amp;lt;agent name=&amp;quot;Core_Database_Agent&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;agent name=&amp;quot;Master_Database_Agent&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;/scheduling&amp;gt;  Processors Remove some processors that are not needed during development:</description>
-    </item>
-    
-    <item>
-      <title>Speed up the Catalog Import process</title>
-      <link>https://joostmeijles.github.io/blog/optimize_catalog_import/</link>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://joostmeijles.github.io/blog/optimize_catalog_import/</guid>
-      <description>The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process. After applying these optimizations, importing a sellable item costs about 15 msec.
-Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usage The ICreateRelationshipPipeline is expensive; do not use it. Instead create the relations yourself. At the same time limit the number of writes (ie.</description>
-    </item>
-    
-    <item>
-      <title>Programmatically adding Entity Composer templates</title>
-      <link>https://joostmeijles.github.io/blog/entity_composer_templates/</link>
-      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://joostmeijles.github.io/blog/entity_composer_templates/</guid>
-      <description>The XC9 Entity Composer functionality is introduced in update-2, and this article describes the concept and explains how to add Entity Composer templates using the Business Tools.
-In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer.
-Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
- Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.</description>
     </item>
     
   </channel>
