@@ -7,9 +7,9 @@
 <title>Speed up Sitecore 9 start | Blog about Sitecore development</title>
 
 <meta property='og:title' content='Speed up Sitecore 9 start - Blog about Sitecore development'>
-<meta property='og:description' content='Sitecore 9 can be slow to start, which is especially annoying during development. Below are some configuration tweaks to speed it up.
-Scheduling Put some agents on low rotation:
-&lt;scheduling&gt; &lt;!-- Update this agent so it doesn&#39;t run every 10 seconds. Appears to be related to email contact management. --&gt; &lt;agent type=&quot;Sitecore.ListManagement.Operations.UpdateListOperationsAgent, Sitecore.ListManagement&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:30:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;agent type=&quot;Sitecore.ContentSearch.SolrProvider.Agents.IndexingStateSwitcher, Sitecore.ContentSearch.SolrProvider&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;08:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;!-- Never automatically build core or master index --&gt; &lt;agent name=&quot;Core_Database_Agent&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;agent name=&quot;Master_Database_Agent&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;/scheduling&gt;  Processors Remove some processors that are not needed during development:'>
+<meta property='og:description' content='Sitecore 9 can be slow to start, which is especially annoying during development.
+Below are some configuration tweaks to speed it up.
+'>
 <meta property='og:url' content='https://joostmeijles.github.io/blog/speedup_sitecore_start/'>
 <meta property='og:site_name' content='Blog about Sitecore development'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://joostmeijles.github.io/blog/android-chrome-512x512.png'><meta property='article:section' content=''><meta property='article:tag' content='Sitecore 9'><meta property='article:published_time' content='2018-09-25T00:00:00Z'/><meta property='article:modified_time' content='2018-09-25T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@joostmeijles'><meta name='twitter:creator' content='@joostmeijles'>
@@ -107,10 +107,9 @@ Scheduling Put some agents on low rotation:
     <h1 class="title">Speed up Sitecore 9 start</h1>
     
     <div class="content">
-      
-
-<p>Sitecore 9 can be slow to start, which is especially annoying during development.
-Below are some configuration tweaks to speed it up.</p>
+      <p>Sitecore 9 can be slow to start, which is especially annoying during development.
+Below are some configuration tweaks to speed it up.
+</p>
 
 <h2 id="scheduling">Scheduling</h2>
 
@@ -184,7 +183,6 @@ Below are some configuration tweaks to speed it up.</p>
 - Gary Wenneker: <a href="https://gary.wenneker.org/performance-tuning-sitecore-ludicrous-speed/" target="_blank">https://gary.wenneker.org/performance-tuning-sitecore-ludicrous-speed/</a>
 - Per Bering:
 <a href="https://gist.github.com/pbering/e3866e452c75e030e710f62d267dbb4e" target="_blank">https://gist.github.com/pbering/e3866e452c75e030e710f62d267dbb4e</a></p>
-
       
       <div class="related">
 </div>
@@ -205,7 +203,7 @@ Below are some configuration tweaks to speed it up.</p>
 </section>
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

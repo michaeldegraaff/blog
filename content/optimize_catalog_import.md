@@ -6,7 +6,7 @@ tags = ["XC9"]
 
 The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process.
 After applying these optimizations, importing a sellable item costs about 15 msec.
-
+<!--more-->
 ## Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usage
 The `ICreateRelationshipPipeline` is expensive; do not use it. Instead create the relations yourself. At the same time limit the number of writes (ie. `IPersistEntityPipeline` calls) by keeping objects as much as possible in memory.
 

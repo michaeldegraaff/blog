@@ -18,9 +18,9 @@
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://joostmeijles.github.io/blog/speedup_sitecore_start/</guid>
-      <description>Sitecore 9 can be slow to start, which is especially annoying during development. Below are some configuration tweaks to speed it up.
-Scheduling Put some agents on low rotation:
-&amp;lt;scheduling&amp;gt; &amp;lt;!-- Update this agent so it doesn&#39;t run every 10 seconds. Appears to be related to email contact management. --&amp;gt; &amp;lt;agent type=&amp;quot;Sitecore.ListManagement.Operations.UpdateListOperationsAgent, Sitecore.ListManagement&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:30:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;agent type=&amp;quot;Sitecore.ContentSearch.SolrProvider.Agents.IndexingStateSwitcher, Sitecore.ContentSearch.SolrProvider&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;08:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;!-- Never automatically build core or master index --&amp;gt; &amp;lt;agent name=&amp;quot;Core_Database_Agent&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;agent name=&amp;quot;Master_Database_Agent&amp;quot;&amp;gt; &amp;lt;patch:attribute name=&amp;quot;interval&amp;quot;&amp;gt;00:00:00&amp;lt;/patch:attribute&amp;gt; &amp;lt;/agent&amp;gt; &amp;lt;/scheduling&amp;gt;  Processors Remove some processors that are not needed during development:</description>
+      <description>&lt;p&gt;Sitecore 9 can be slow to start, which is especially annoying during development.
+Below are some configuration tweaks to speed it up.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

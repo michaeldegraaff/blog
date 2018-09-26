@@ -6,7 +6,7 @@ tags = ["Sitecore 9"]
 
 Sitecore 9 can be slow to start, which is especially annoying during development.
 Below are some configuration tweaks to speed it up.
-
+<!--more-->
 ## Scheduling
 Put some agents on low rotation:
 ```

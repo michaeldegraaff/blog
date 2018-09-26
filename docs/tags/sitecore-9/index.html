@@ -107,9 +107,7 @@
       <h2 class="subtitle is-6">September 25, 2018</h2>
       <h1 class="title"><a href="https://joostmeijles.github.io/blog/speedup_sitecore_start/">Speed up Sitecore 9 start</a></h1>
       <div class="content">
-        Sitecore 9 can be slow to start, which is especially annoying during development. Below are some configuration tweaks to speed it up.
-Scheduling Put some agents on low rotation:
-&lt;scheduling&gt; &lt;!-- Update this agent so it doesn't run every 10 seconds. Appears to be related to email contact management. --&gt; &lt;agent type=&quot;Sitecore.ListManagement.Operations.UpdateListOperationsAgent, Sitecore.ListManagement&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:30:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;agent type=&quot;Sitecore.ContentSearch.SolrProvider.Agents.IndexingStateSwitcher, Sitecore.ContentSearch.SolrProvider&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;08:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;!-- Never automatically build core or master index --&gt; &lt;agent name=&quot;Core_Database_Agent&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;agent name=&quot;Master_Database_Agent&quot;&gt; &lt;patch:attribute name=&quot;interval&quot;&gt;00:00:00&lt;/patch:attribute&gt; &lt;/agent&gt; &lt;/scheduling&gt;  Processors Remove some processors that are not needed during development:
+        Sitecore 9 can be slow to start, which is especially annoying during development. Below are some configuration tweaks to speed it up. 
         
         <a class="button is-link" href="https://joostmeijles.github.io/blog/speedup_sitecore_start/" style="height:28px">
           Read more
@@ -150,7 +148,7 @@ Scheduling Put some agents on low rotation:
 </section>
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

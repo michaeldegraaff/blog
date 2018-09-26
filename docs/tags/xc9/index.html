@@ -107,8 +107,7 @@
       <h2 class="subtitle is-6">September 24, 2018</h2>
       <h1 class="title"><a href="https://joostmeijles.github.io/blog/optimize_catalog_import/">Speed up the Catalog Import process</a></h1>
       <div class="content">
-        The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process. After applying these optimizations, importing a sellable item costs about 15 msec.
-Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usage The ICreateRelationshipPipeline is expensive; do not use it. Instead create the relations yourself. At the same time limit the number of writes (ie.
+        The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process. After applying these optimizations, importing a sellable item costs about 15 msec. 
         
         <a class="button is-link" href="https://joostmeijles.github.io/blog/optimize_catalog_import/" style="height:28px">
           Read more
@@ -134,9 +133,8 @@ Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usag
       <h1 class="title"><a href="https://joostmeijles.github.io/blog/entity_composer_templates/">Programmatically adding Entity Composer templates</a></h1>
       <div class="content">
         The XC9 Entity Composer functionality is introduced in update-2, and this article describes the concept and explains how to add Entity Composer templates using the Business Tools.
-In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer.
-Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
- Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.
+In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer. Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
+
         
         <a class="button is-link" href="https://joostmeijles.github.io/blog/entity_composer_templates/" style="height:28px">
           Read more
@@ -177,7 +175,7 @@ Creating a template, adding it to a sellable item, and filling a property value 
 </section>
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

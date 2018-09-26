@@ -18,8 +18,9 @@
       <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://joostmeijles.github.io/blog/optimize_catalog_import/</guid>
-      <description>The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process. After applying these optimizations, importing a sellable item costs about 15 msec.
-Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usage The ICreateRelationshipPipeline is expensive; do not use it. Instead create the relations yourself. At the same time limit the number of writes (ie.</description>
+      <description>&lt;p&gt;The performance of the current Catalog import in XC9 update-2 is not so good. This article gives a few tips on how to speed up the import process.
+After applying these optimizations, importing a sellable item costs about 15 msec.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,10 +29,12 @@ Do not use the ICreateRelationshipPipeline and limit IPersistEntityPipeline usag
       <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://joostmeijles.github.io/blog/entity_composer_templates/</guid>
-      <description>The XC9 Entity Composer functionality is introduced in update-2, and this article describes the concept and explains how to add Entity Composer templates using the Business Tools.
-In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer.
-Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
- Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.</description>
+      <description>&lt;p&gt;The XC9 Entity Composer functionality is introduced in update-2, and this &lt;a href=&#34;https://community.sitecore.net/technical_blogs/b/technical-marketing/posts/experience-commerce-entity-composer&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; describes the concept and explains how to add Entity Composer templates using the Business Tools.&lt;/p&gt;
+
+&lt;p&gt;In this article we describe how to programmatically add Entity Composer templates.
+This is for example useful when writing your own catalog importer.
+
+Creating a template, adding it to a sellable item, and filling a property value requires the following steps:&lt;/p&gt;</description>
     </item>
     
   </channel>

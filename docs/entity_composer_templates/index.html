@@ -8,9 +8,11 @@
 
 <meta property='og:title' content='Programmatically adding Entity Composer templates - Blog about Sitecore development'>
 <meta property='og:description' content='The XC9 Entity Composer functionality is introduced in update-2, and this article describes the concept and explains how to add Entity Composer templates using the Business Tools.
-In this article we describe how to programmatically add Entity Composer templates. This is for example useful when writing your own catalog importer.
-Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
- Create an Entity Composer template Add an item definition to the catalog Link template to an item definition Set a property value for a sellable item Link the entity view to the Entity Composer template  The next sections describe each step in detail.'>
+
+In this article we describe how to programmatically add Entity Composer templates.
+This is for example useful when writing your own catalog importer.
+
+Creating a template, adding it to a sellable item, and filling a property value requires the following steps:'>
 <meta property='og:url' content='https://joostmeijles.github.io/blog/entity_composer_templates/'>
 <meta property='og:site_name' content='Blog about Sitecore development'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://joostmeijles.github.io/blog/android-chrome-512x512.png'><meta property='article:section' content=''><meta property='article:tag' content='XC9'><meta property='article:published_time' content='2018-08-29T00:00:00Z'/><meta property='article:modified_time' content='2018-08-29T00:00:00Z'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@joostmeijles'><meta name='twitter:creator' content='@joostmeijles'>
@@ -109,14 +111,12 @@ Creating a template, adding it to a sellable item, and filling a property value 
     <h1 class="title">Programmatically adding Entity Composer templates</h1>
     
     <div class="content">
-      
-
-<p>The XC9 Entity Composer functionality is introduced in update-2, and this <a href="https://community.sitecore.net/technical_blogs/b/technical-marketing/posts/experience-commerce-entity-composer" target="_blank">article</a> describes the concept and explains how to add Entity Composer templates using the Business Tools.</p>
+      <p>The XC9 Entity Composer functionality is introduced in update-2, and this <a href="https://community.sitecore.net/technical_blogs/b/technical-marketing/posts/experience-commerce-entity-composer" target="_blank">article</a> describes the concept and explains how to add Entity Composer templates using the Business Tools.</p>
 
 <p>In this article we describe how to programmatically add Entity Composer templates.
-This is for example useful when writing your own catalog importer.</p>
+This is for example useful when writing your own catalog importer.
 
-<p>Creating a template, adding it to a sellable item, and filling a property value requires the following steps:</p>
+Creating a template, adding it to a sellable item, and filling a property value requires the following steps:</p>
 
 <ul>
 <li>Create an Entity Composer template</li>
@@ -278,7 +278,6 @@ fieldList1.Add(templateField.ID, val);
 
 <li><p>Circular template inheritance error; the generated template inherits from its self. This is not a blocking issue, but to be solved and probably closely related to the template shown twice issue.</p></li>
 </ul>
-
       
       <div class="related">
 </div>
@@ -299,7 +298,7 @@ fieldList1.Add(templateField.ID, val);
 </section>
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

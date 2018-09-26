@@ -50,3 +50,8 @@ tag ="tags"
 [blackfriday]
 hrefTargetBlank = true
 
+# Adding this tag enables RSS feed
+[params.rss]
+includeContent = true # Includes whole content in rss
+authorName = "Joost Meijles"
+authorEmail = "joost@meijl.es"
