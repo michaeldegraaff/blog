@@ -44,8 +44,7 @@ After applying these optimizations, importing a sellable item costs about 15 mse
 
 &lt;p&gt;In this article we describe how to programmatically add Entity Composer templates.
 This is for example useful when writing your own catalog importer.
-
-Creating a template, adding it to a sellable item, and filling a property value requires the following steps:&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     
   </channel>

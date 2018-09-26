@@ -10,6 +10,7 @@ The XC9 Entity Composer functionality is introduced in update-2, and this [artic
 In this article we describe how to programmatically add Entity Composer templates.
 This is for example useful when writing your own catalog importer.
 <!--more-->
+
 Creating a template, adding it to a sellable item, and filling a property value requires the following steps:
 
 * Create an Entity Composer template
