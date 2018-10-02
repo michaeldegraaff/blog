@@ -16,6 +16,7 @@ Creating a template, adding it to a sellable item, and filling a property value 
 * Create an Entity Composer template
 * Add an item definition to the catalog
 * Link template to an item definition
+* Link sellable item to item definition
 * Set a property value for a sellable item
 * Link the entity view to the Entity Composer template
 
