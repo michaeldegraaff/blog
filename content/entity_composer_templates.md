@@ -55,7 +55,7 @@ var entityView = new EntityView
     DisplayRank = 0,
     Icon = "piece"
 };
-entityView.SetItemIdForComposerView();
+entityView.SetItemIdForComposerView(); // This is the ItemId you will need to link in the sellable item
 
 templateEntityViewComponent.View.ChildViews.Add(entityView);
 
@@ -101,6 +101,21 @@ template.SetComponent(
 );
 ```
 
+## Link sellable item to item definition
+To link the sellable item to the item definition;
+```
+sellableItem.Components.Add(new CatalogsComponent {
+    ChildComponents =
+    {
+        new CatalogComponent
+        {
+            Name = "MyCatalog",
+            ItemDefinition = "MyDefinition"
+        }
+    }
+});
+```
+
 ## Set a property value for a sellable item
 To add a property value for the linked template we need to;
 - create an entity view with the same name as the template, 
@@ -114,7 +129,7 @@ var propertyEntityView = new EntityView
     DisplayRank = 0,
     Icon = "piece" // Same as Business Tools adds by default
 };
-propertyEntityView.SetItemIdForComposerView(); // Set an appropriate item id, will result in "Composer-<GUID>" formatted string
+propertyEntityView.ItemId = entityView.ItemId; // Use the item id of the composer template entity view
 
 var viewProperty = new ViewProperty
 {
@@ -161,4 +176,4 @@ The Entity Composer functionality is brand new, and while reverse engineering ho
     fieldList1.Add(templateField.ID, val);
     ```
 
-- Circular template inheritance error; the generated template inherits from its self. This is not a blocking issue, but to be solved and probably closely related to the template shown twice issue.
+- Circular template inheritance error; the generated template inherits from its self.

@@ -163,7 +163,7 @@ var entityView = new EntityView
     DisplayRank = 0,
     Icon = &quot;piece&quot;
 };
-entityView.SetItemIdForComposerView();
+entityView.SetItemIdForComposerView(); // This is the ItemId you will need to link in the sellable item
 
 templateEntityViewComponent.View.ChildViews.Add(entityView);
 
@@ -212,6 +212,22 @@ catalog.SetComponent(itemDefinitionsComponent);
 );
 </code></pre>
 
+<h2 id="link-sellable-item-to-item-definition">Link sellable item to item definition</h2>
+
+<p>To link the sellable item to the item definition;</p>
+
+<pre><code>sellableItem.Components.Add(new CatalogsComponent {
+    ChildComponents =
+    {
+        new CatalogComponent
+        {
+            Name = &quot;MyCatalog&quot;,
+            ItemDefinition = &quot;MyDefinition&quot;
+        }
+    }
+});
+</code></pre>
+
 <h2 id="set-a-property-value-for-a-sellable-item">Set a property value for a sellable item</h2>
 
 <p>To add a property value for the linked template we need to;
@@ -226,7 +242,7 @@ var propertyEntityView = new EntityView
     DisplayRank = 0,
     Icon = &quot;piece&quot; // Same as Business Tools adds by default
 };
-propertyEntityView.SetItemIdForComposerView(); // Set an appropriate item id, will result in &quot;Composer-&lt;GUID&gt;&quot; formatted string
+propertyEntityView.ItemId = entityView.ItemId; // Use the item id of the composer template entity view
 
 var viewProperty = new ViewProperty
 {
@@ -276,7 +292,7 @@ sellableItem.Components.Add(composerTemplateViewsComponent);
 fieldList1.Add(templateField.ID, val);
 </code></pre></li>
 
-<li><p>Circular template inheritance error; the generated template inherits from its self. This is not a blocking issue, but to be solved and probably closely related to the template shown twice issue.</p></li>
+<li><p>Circular template inheritance error; the generated template inherits from its self.</p></li>
 </ul>
       
       <div class="related">
