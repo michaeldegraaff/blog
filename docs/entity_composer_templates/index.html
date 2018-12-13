@@ -174,8 +174,15 @@ var viewProperty = new ViewProperty
     Name = &quot;MyPropertyName&quot;,
     DisplayName = &quot;My example property&quot;,
     OriginalType = &quot;System.String&quot;,
-    IsRequired = false // By default a property is not required
+    IsRequired = false, // By default a property is not required
+    RawValue = &quot;&quot; // This is necesary to please the CatalogTemplateGenerator (present in XC9 update-3)
 };
+
+// The CatalogTemplateGenerator requires a DateTimeOffset to be filled with a compatible value (present in XC9 update-3)
+if (viewProperty.OriginalType == &quot;System.DateTimeOffset&quot;)
+{
+    viewProperty.RawValue = System.DateTimeOffset.Now;
+}
 
 entityView.Properties.Add(viewProperty);
 
