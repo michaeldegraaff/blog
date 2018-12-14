@@ -51,7 +51,7 @@ var template = new ComposerTemplate(CommerceEntity.IdPrefix<ComposerTemplate>() 
 // Create an Entity View that holds the properties
 var entityView = new EntityView
 {
-    Name = name,
+    Name = name, // This name should be different than the ComposerTemplate name. See Sitecore bug #276414.
     DisplayName = name,
     DisplayRank = 0,
     Icon = "piece"
@@ -184,4 +184,4 @@ The Entity Composer functionality is brand new, and while reverse engineering ho
     fieldList1.Add(templateField.ID, val);
     ```
 
-- Circular template inheritance error; the generated template inherits from its self.
+- Circular template inheritance error; the generated template inherits from its self. This occurs when the `ComposerTemplate` has a `EntityView` with the same name, and is registered as bug #276414 by Sitecore.
