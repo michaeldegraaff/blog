@@ -19,8 +19,7 @@
       
       <guid>https://joostmeijles.github.io/blog/speedup_sitecore_start/</guid>
       <description>&lt;p&gt;Sitecore 9 can be slow to start, which is especially annoying during development.
-Below are some configuration tweaks to speed it up.
-&lt;/p&gt;</description>
+Below are some configuration tweaks to speed it up.&lt;/p&gt;</description>
     </item>
     
   </channel>

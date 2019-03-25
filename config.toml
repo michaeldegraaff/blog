@@ -1,4 +1,4 @@
-baseurl = "https://joostmeijles.github.io/blog"
+# baseurl = "https://joostmeijles.github.io/blog"
 languageCode = "en"
 title = "Blog about Sitecore development"
 description = "My personal blog about Sitecore development"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-124806744-1"
 # Number of posts per page
 Paginate = 5
 enableRobotsTXT = true
-publishDir = "docs" # https://gohugo.io/hosting-and-deployment/hosting-on-github/
+publishDir = "publish" # https://gohugo.io/hosting-and-deployment/hosting-on-github/
 image = "favicon.ico"
 
 [params.assets]
