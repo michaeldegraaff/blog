@@ -11,3 +11,9 @@ fields:
 - type: list
   name: tags
   label: tags
+- name: canonical
+  type: text
+  config:
+    required: false
+  label: canonical
+  description: Canonical URL
