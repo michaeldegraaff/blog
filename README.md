@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f20ed79a-ac05-4bd8-b7f6-3e53ec1dc6b4/deploy-status)](https://app.netlify.com/sites/joostmeijles/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f20ed79a-ac05-4bd8-b7f6-3e53ec1dc6b4/deploy-status)](https://app.netlify.com/sites/michaeldegraaff/deploys)
 
 My personal blog about Sitecore development.
 

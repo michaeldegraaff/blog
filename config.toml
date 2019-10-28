@@ -1,11 +1,10 @@
-# baseurl = "https://joostmeijles.github.io/blog"
+# baseurl = "https://michaeldegraaff.github.io/blog"
 languageCode = "en"
-title = "Blog about Sitecore development"
-description = "My personal blog about Sitecore development"
+title = "It's all about Quality Assurance"
+description = "My personal blog about quality assurance"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/joostmeijles/blog\">Joost Meijles</a> 2019"
+copyright = "&copy; <a href=\"https://github.com/michaeldegraaff/blog\">Michael de Graaff</a> 2019"
 disqusShortname = ""
-googleAnalytics = "UA-124806744-1"
 # Number of posts per page
 Paginate = 5
 enableRobotsTXT = true
@@ -15,7 +14,7 @@ image = "favicon.ico"
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = true # Adds OpenGraph and Twitter cards
-homeTitle = "Sitecore development by Joost Meijles" # Title for home page
+homeTitle = "Quality Assurance" # Title for home page
 poweredby = true # Adds powered by Hugo and Kiss below Copyright section
 related = true # Includes related articles
 
@@ -28,10 +27,9 @@ pageID = ""
 page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
-twitter = "joostmeijles"
-github = "joostmeijles"
-email = "joost@meijl.es"
-linkedin = "joostmeijles"
+github = "michaeldegraaff"
+email = "m.d.graaff1@gmail.com"
+linkedin = "/michael-de-graaff-28648094"
 facebook = ""
 instagram = ""
 codepen = ""
@@ -42,8 +40,8 @@ tag ="tags"
 # Adding this tag enables RSS feed
 [params.rss]
 includeContent = true # Includes whole content in rss
-authorName = "Joost Meijles"
-authorEmail = "joost@meijl.es"
+authorName = "Michael de Graaff"
+authorEmail = "m.d.graaff1@gmail.com"
 
 [outputFormats.Algolia]
 baseName = "algolia"
@@ -52,7 +50,7 @@ mediaType = "application/json"
 notAlternative = true
 
 [params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink", "content"]
 params = ["categories", "tags"]
 
 [outputs]
