@@ -28,7 +28,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 [params.social]
 github = "michaeldegraaff"
-email = "m.d.graaff1@gmail.com"
+email = ""
 linkedin = "/michael-de-graaff-28648094"
 facebook = ""
 instagram = ""
@@ -41,7 +41,7 @@ tag ="tags"
 [params.rss]
 includeContent = true # Includes whole content in rss
 authorName = "Michael de Graaff"
-authorEmail = "m.d.graaff1@gmail.com"
+authorEmail = ""
 
 [outputFormats.Algolia]
 baseName = "algolia"
